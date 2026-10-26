@@ -497,3 +497,12 @@ html.js .reveal.in.d3 { animation-delay: .24s; }
 .video-frame video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; background: #000; }
 .video-cta { text-align: center; margin-top: 34px; }
 @media (max-width: 560px) { .video-frame { border-radius: 12px; } }
+
+/* FAQ */
+.faq-list{max-width:820px;margin:0 auto;display:grid;gap:12px}
+.faq-item{background:rgba(255,255,255,.04);border:1px solid var(--line-light);border-radius:12px;padding:0 20px}
+.faq-item summary{cursor:pointer;list-style:none;padding:18px 0;font-weight:600;font-size:1.02rem;color:#fff;display:flex;justify-content:space-between;gap:16px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--cyan-br);font-size:1.4rem;line-height:1}
+.faq-item[open] summary::after{content:"–"}
+.faq-item p{margin:0 0 18px;color:var(--t-light-2);line-height:1.65}
